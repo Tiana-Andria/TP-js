@@ -6,7 +6,7 @@ tab.push(1)
 tab.reverse()
 
 //ou
-tab.splice(0, "Je suis le premier element")
+tab.splice(0, 0, "Je suis le premier element")
 
 //Ajout dernier element
 tab.push(44)
@@ -32,12 +32,12 @@ console.log(tab.indexOf(8.9))
 console.log(tab.reverse())
 
 //supprimer un element specifique
-tab.pop(2)
+tab.splice(1,1)
 console.log(tab);
 
 //Filtrer les elements d'un tab en fonction d'une condition
 let obj = tab.filter((item)=>{
-    return item === Object
+    return typeof item === "object"
 })
 
 console.log(obj);
