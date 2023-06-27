@@ -6,8 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="para">Hello</p>
 
-    <script src="js/fonction.js"></script>
+    <div id="myDiv">
+        <h1>Hello again</h1>
+    </div>
+
+    <button id="myBtn">Bouton</button>
+
+    <script>
+        let p = document.getElementById("para");
+        p.innerHTML = "<h1>Un nouveau texte</h1>";
+        p.setAttribute("style", "background-color:red;")
+
+       /* let btn = document.getElementById("myBtn")
+        btn.addEventListener("click", function(){
+            console.log("Click");
+        }, false);
+
+        let myP = document.createElement("p");
+        myP.innerHTML= "Blablablaaaa";
+
+        let myDiv = document.getElementById("myDiv")
+
+        myDiv.appendChild(myP)
+
+        let tag = document.getElementsByTagName("h1")[0]
+        console.log(tag);
+        tag.parentNode.removeChild(tag)
+        
+        */
+
+
+
+
+
+    </script>
+
+    <script src="js/ternaires.js"></script>
 </body>
 </html>

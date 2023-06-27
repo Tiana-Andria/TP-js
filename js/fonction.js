@@ -1,56 +1,33 @@
-function toDegreCelsius(temp)
-{
-    let d = (temp-32)/(1.8)
-    return d;
+function add(a,b){
+    return a+b
 }
 
-console.log(toDegreCelsius(90));
+console.log(add(3,6));
 
-
-// la somme d'un chiffre d'un nombre
-
-function sommeChiffreNombre(nb)
-{
-    let st = nb.toString().split('');
-    let somme = 0;
-    for (s in st)
-    {
-        somme = somme + parseInt(st[s])
-    }
-
-    return somme;
+function isEven(n){
+    return n % 2 === 0 ? true : false;
 }
 
-console.log(sommeChiffreNombre(12345));
 
-//verification parentheses
 
-function verifierParentheses(chaine)
+function nom(name){
+    return "Bonjour ["+name+"]";
+}
+console.log(nom("John Wick"));
+
+
+
+function calculArea(larg, long)
 {
-    let count1 = 0;
-    let count2 = 0;
-
-    let tab = chaine.split("")
-    
-    for (t in tab)
-    {
-        if (tab[t] === '(')
-        {
-            count1++;
-        }
-        if (tab[t] === ')')
-        {
-            count2++;
-        }
-
-    }
-
-    if (count1 === count2)
-    {
-        return true
-    }
-
-    return false
+    return larg*long;
 }
 
-console.log(verifierParentheses("alert('je() suis un message) dans alert)"));
+console.log(calculArea(2,3));
+
+
+
+function reverseString(chaine){
+    return chaine.split('').reverse().join('');
+}
+
+console.log(reverseString("Bonjour"));
