@@ -1,0 +1,36 @@
+<!-- Sélectionnez un élément de la page par son ID et modifiez son contenu en remplaçant le texte existant par "Nouveau texte". -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test du code</title>
+</head>
+<body>
+  <p id="test">Coucou</p>
+  <button type="submit" id="bouton">Mon bouton</button>
+
+  <script>
+    let element = document.getElementById("test");
+    element.textContent = "Bonjour";
+    //Ajoutez un écouteur d'événements à un bouton de la page pour afficher "Clic !" dans la console lorsque le bouton est cliqué. 
+    let btn =bouton.addEventListener("click",clic)
+    function clic (){
+      console.log("Clic !")
+    }
+    // Créez un nouvel élément de paragraphe (<p>) et ajoutez-le au document en tant qu'enfant d'un élément existant
+      let newP=document.createElement("p");
+      newP.textContent="nouveau"
+      element.appendChild(newP);
+
+      //Supprimez un élément de la page en le sélectionnant et en utilisant la méthode appropriée pour le supprimer du DOM.
+      let toDelete=document.getElementById("test");
+      toDelete.remove();
+
+      //Modifiez les styles d'un élément en ajoutant ou en modifiant les propriétés CSS de cet élément à l'aide de JavaScript.
+      let elm=document.getElementById("bouton");
+      elm.style.backgroundColor="yellow";
+      elm.style.color="red";
+      elm.style.borderRadius="20%";
+
+  </script>
+</body>
+</html>
