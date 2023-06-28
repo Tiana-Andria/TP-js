@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Créez un paragraphe <p> avec un ID spécifique et un bouton. -->
+<p id="element1">Bonjour</p>
+<button id="element2">Clic Moi</button>
+</body>
+<script>
+    //Utilisez getElementById pour sélectionner le paragraphe et le bouton
+    let p =document.getElementById("element1");
+    let bouton = document.getElementById("element2");
+    //Ajoutez un écouteur d'événement pour le clic sur le bouton.
+    //À chaque clic, modifiez le contenu du paragraphe en utilisant innerHTML pour afficher un nouveau texte.
+    
+    let ecouteur=element2.addEventListener("click",changeText)
+    function changeText(){
+        p.innerHTML="changer";
+    }
+
+
+</script>
+</html>

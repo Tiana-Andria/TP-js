@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Créez un bouton avec un ID spécifique.
+Utilisez getElementById pour sélectionner le bouton.
+Ajoutez un écouteur d'événement pour le clic sur le bouton.
+À chaque clic, changez la couleur du texte d'un élément spécifique en utilisant setAttribute. -->
+<button id="MonBouton">Bouton</button>
+<p id="element">ELEMENT</p>
+</body>
+<script>
+    let bouton=document.getElementById("MonBouton");
+    let elem = document.getElementById("element");
+    let listener=bouton.addEventListener("click",change)
+    function change(){
+        elem.setAttribute("style","color:red");
+    }
+</script>
+</html>
