@@ -1,0 +1,37 @@
+<!-- algo qui demande la saisie d'un tableau de 10 entiers et de mettre les pairs dans T1 et impairs dans T2 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pairs/impairs</title>
+  </head>
+  <body>
+    <script>
+      function tab() {
+        let tableau = [];
+        let T1 = [];
+        let T2 = [];
+      
+        for (let i = 0; i <10; i++) {
+          let saisie = prompt("Veuillez saisir la  " + (i+1) +"e valeur" );
+          tableau.push(parseInt(saisie, 10));
+        }
+      
+        for (let i = 0; i < tableau.length; i++) {
+          if (tableau[i] % 2 === 0) {
+            T1.push(tableau[i]);
+          } else {
+            T2.push(tableau[i]);
+          }
+        }
+      
+        console.log(tableau);
+        console.log(T1);
+        console.log(T2);
+      }
+      
+      tab();
+      
+    </script>
+  </body>
+</html>
