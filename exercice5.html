@@ -1,0 +1,31 @@
+<!-- algo qui demande la saisie d'un entier n et d'afficher un triangle d'etoiles -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>triangle Etoile</title>
+  </head>
+  <body>
+    <script>
+        function TriangleEtoiles() {
+            let n = parseInt(prompt("Veuillez saisir un entier n :"));
+            for (let etoiles = 1; etoiles <= n+1; etoiles += 1) {
+              let triangle = "";
+              for (let i = 1; i <= etoiles; i++) {
+                triangle += "*";
+              }
+              console.log(triangle);
+            }
+            for (let etoiles = n; etoiles >= 1; etoiles -= 1) {
+              let triangle = "";
+              for (let i = 1; i <= etoiles; i++) {
+                triangle += "*";
+              }
+              console.log(triangle);
+            }
+          }
+          
+          TriangleEtoiles();
+    </script>
+  </body>
+</html>
